@@ -36,7 +36,7 @@ docker build -t mern-frontend .
 docker run --name=frontend --network=demo -d -p 5173:5173 mern-frontend
 ```
 
-To verify the frontend is running, open your browser and navigate to `http://localhost:5173`[1].
+To verify the frontend is running, open your browser and navigate to `http://localhost:5173`.
 
 ### Backend
 
@@ -94,4 +94,4 @@ The `docker-compose.yaml` file defines the following services:
    - Connected to the `mern_network`
    - Data persisted using a local volume
 
-The compose file also defines a custom network (`mern_network`) and a volume for MongoDB data persistence[2].
+The compose file also defines a custom network (`mern_network`) and a volume for MongoDB data persistence.
